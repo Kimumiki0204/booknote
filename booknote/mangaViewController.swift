@@ -8,13 +8,34 @@
 
 import UIKit
 
-class mangaViewController: UIViewController,UITextFieldDelegate {
+class mangaViewController: UIViewController,UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate {
+    
+    @IBOutlet var table: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        table.dataSource = self
+        table.delegate = self
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        
+        cell?.textLabel?.text = "テスト"
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
     
 

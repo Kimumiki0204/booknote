@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59F52B3259B4CC9EF8200A21 /* Pods_booknote_booknoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A21E1E795EE65DB25A4BD /* Pods_booknote_booknoteUITests.framework */; };
+		66A7783C4DEC4C212E99BD3F /* Pods_booknote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B20D5794A070AF8A71F2E6 /* Pods_booknote.framework */; };
 		686D21B523C9C7AE00C8889F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D21B423C9C7AE00C8889F /* AppDelegate.swift */; };
 		686D21B723C9C7AE00C8889F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D21B623C9C7AE00C8889F /* SceneDelegate.swift */; };
 		686D21B923C9C7AE00C8889F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D21B823C9C7AE00C8889F /* ViewController.swift */; };
@@ -15,9 +17,11 @@
 		686D21C123C9C7AF00C8889F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686D21BF23C9C7AF00C8889F /* LaunchScreen.storyboard */; };
 		686D21CC23C9C7AF00C8889F /* booknoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D21CB23C9C7AF00C8889F /* booknoteTests.swift */; };
 		686D21D723C9C7AF00C8889F /* booknoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D21D623C9C7AF00C8889F /* booknoteUITests.swift */; };
+		689AECA524012FC800D3EBD0 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689AECA424012FC800D3EBD0 /* addViewController.swift */; };
 		68C778E423DC469D00F882A5 /* mangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C778E323DC469D00F882A5 /* mangaViewController.swift */; };
-		68C778E623DC46CF00F882A5 /* wasyoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C778E523DC46CF00F882A5 /* wasyoViewController.swift */; };
-		68C778E823DC46E000F882A5 /* yousyoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C778E723DC46E000F882A5 /* yousyoViewController.swift */; };
+		68CC4D1C240A689C00BE72E7 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC4D1B240A689C00BE72E7 /* BookModel.swift */; };
+		68CC4D1D240A689C00BE72E7 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC4D1B240A689C00BE72E7 /* BookModel.swift */; };
+		A571EDB1EF25D510552807F9 /* Pods_booknoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D19F49DE72CCCF7BEC0394 /* Pods_booknoteTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2754F70C2468B1F6E75C2A2E /* Pods-booknote-booknoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknote-booknoteUITests.release.xcconfig"; path = "Target Support Files/Pods-booknote-booknoteUITests/Pods-booknote-booknoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3EB152E71885E3351F5B72CB /* Pods-booknoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteTests.debug.xcconfig"; path = "Target Support Files/Pods-booknoteTests/Pods-booknoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40B20D5794A070AF8A71F2E6 /* Pods_booknote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booknote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		573A21E1E795EE65DB25A4BD /* Pods_booknote_booknoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booknote_booknoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D21B123C9C7AE00C8889F /* booknote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D21B423C9C7AE00C8889F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		686D21B623C9C7AE00C8889F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +60,14 @@
 		686D21D223C9C7AF00C8889F /* booknoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = booknoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D21D623C9C7AF00C8889F /* booknoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booknoteUITests.swift; sourceTree = "<group>"; };
 		686D21D823C9C7AF00C8889F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689AECA424012FC800D3EBD0 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		68C778E323DC469D00F882A5 /* mangaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mangaViewController.swift; sourceTree = "<group>"; };
-		68C778E523DC46CF00F882A5 /* wasyoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wasyoViewController.swift; sourceTree = "<group>"; };
-		68C778E723DC46E000F882A5 /* yousyoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yousyoViewController.swift; sourceTree = "<group>"; };
+		68CC4D1B240A689C00BE72E7 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		AC2469FC9FF64199354321E5 /* Pods-booknote-booknoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknote-booknoteUITests.debug.xcconfig"; path = "Target Support Files/Pods-booknote-booknoteUITests/Pods-booknote-booknoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0408C3451D411983A4B9E7 /* Pods-booknote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknote.debug.xcconfig"; path = "Target Support Files/Pods-booknote/Pods-booknote.debug.xcconfig"; sourceTree = "<group>"; };
+		D3DDED7574167D241F4877F5 /* Pods-booknoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknoteTests.release.xcconfig"; path = "Target Support Files/Pods-booknoteTests/Pods-booknoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCEB505A2B9A48014297D4DF /* Pods-booknote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booknote.release.xcconfig"; path = "Target Support Files/Pods-booknote/Pods-booknote.release.xcconfig"; sourceTree = "<group>"; };
+		E6D19F49DE72CCCF7BEC0394 /* Pods_booknoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_booknoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A7783C4DEC4C212E99BD3F /* Pods_booknote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A571EDB1EF25D510552807F9 /* Pods_booknoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +91,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F52B3259B4CC9EF8200A21 /* Pods_booknote_booknoteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24AF80109E820D2CB94BD687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40B20D5794A070AF8A71F2E6 /* Pods_booknote.framework */,
+				573A21E1E795EE65DB25A4BD /* Pods_booknote_booknoteUITests.framework */,
+				E6D19F49DE72CCCF7BEC0394 /* Pods_booknoteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		645534014611631D00E72C55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC0408C3451D411983A4B9E7 /* Pods-booknote.debug.xcconfig */,
+				DCEB505A2B9A48014297D4DF /* Pods-booknote.release.xcconfig */,
+				AC2469FC9FF64199354321E5 /* Pods-booknote-booknoteUITests.debug.xcconfig */,
+				2754F70C2468B1F6E75C2A2E /* Pods-booknote-booknoteUITests.release.xcconfig */,
+				3EB152E71885E3351F5B72CB /* Pods-booknoteTests.debug.xcconfig */,
+				D3DDED7574167D241F4877F5 /* Pods-booknoteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		686D21A823C9C7AE00C8889F = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,8 @@
 				686D21CA23C9C7AF00C8889F /* booknoteTests */,
 				686D21D523C9C7AF00C8889F /* booknoteUITests */,
 				686D21B223C9C7AE00C8889F /* Products */,
+				645534014611631D00E72C55 /* Pods */,
+				24AF80109E820D2CB94BD687 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +150,12 @@
 				686D21B623C9C7AE00C8889F /* SceneDelegate.swift */,
 				686D21B823C9C7AE00C8889F /* ViewController.swift */,
 				68C778E323DC469D00F882A5 /* mangaViewController.swift */,
-				68C778E523DC46CF00F882A5 /* wasyoViewController.swift */,
 				686D21BA23C9C7AE00C8889F /* Main.storyboard */,
+				689AECA424012FC800D3EBD0 /* addViewController.swift */,
 				686D21BD23C9C7AF00C8889F /* Assets.xcassets */,
 				686D21BF23C9C7AF00C8889F /* LaunchScreen.storyboard */,
 				686D21C223C9C7AF00C8889F /* Info.plist */,
-				68C778E723DC46E000F882A5 /* yousyoViewController.swift */,
+				68CC4D1B240A689C00BE72E7 /* BookModel.swift */,
 			);
 			path = booknote;
 			sourceTree = "<group>";
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 686D21DB23C9C7AF00C8889F /* Build configuration list for PBXNativeTarget "booknote" */;
 			buildPhases = (
+				EDE465D6FF849D1D38985E4A /* [CP] Check Pods Manifest.lock */,
 				686D21AD23C9C7AE00C8889F /* Sources */,
 				686D21AE23C9C7AE00C8889F /* Frameworks */,
 				686D21AF23C9C7AE00C8889F /* Resources */,
+				53063D763E400C055353617A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 686D21DE23C9C7AF00C8889F /* Build configuration list for PBXNativeTarget "booknoteTests" */;
 			buildPhases = (
+				A53C98A118D121D653BBE72A /* [CP] Check Pods Manifest.lock */,
 				686D21C323C9C7AF00C8889F /* Sources */,
 				686D21C423C9C7AF00C8889F /* Frameworks */,
 				686D21C523C9C7AF00C8889F /* Resources */,
@@ -179,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 686D21E123C9C7AF00C8889F /* Build configuration list for PBXNativeTarget "booknoteUITests" */;
 			buildPhases = (
+				0F3D034B070999145FCD6A10 /* [CP] Check Pods Manifest.lock */,
 				686D21CE23C9C7AF00C8889F /* Sources */,
 				686D21CF23C9C7AF00C8889F /* Frameworks */,
 				686D21D023C9C7AF00C8889F /* Resources */,
+				43DC41849D5710948DBB54FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,16 +309,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F3D034B070999145FCD6A10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-booknote-booknoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43DC41849D5710948DBB54FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-booknote-booknoteUITests/Pods-booknote-booknoteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-booknote-booknoteUITests/Pods-booknote-booknoteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-booknote-booknoteUITests/Pods-booknote-booknoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53063D763E400C055353617A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-booknote/Pods-booknote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-booknote/Pods-booknote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-booknote/Pods-booknote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53C98A118D121D653BBE72A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-booknoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE465D6FF849D1D38985E4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-booknote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		686D21AD23C9C7AE00C8889F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689AECA524012FC800D3EBD0 /* addViewController.swift in Sources */,
 				686D21B923C9C7AE00C8889F /* ViewController.swift in Sources */,
 				68C778E423DC469D00F882A5 /* mangaViewController.swift in Sources */,
 				686D21B523C9C7AE00C8889F /* AppDelegate.swift in Sources */,
-				68C778E623DC46CF00F882A5 /* wasyoViewController.swift in Sources */,
-				68C778E823DC46E000F882A5 /* yousyoViewController.swift in Sources */,
+				68CC4D1C240A689C00BE72E7 /* BookModel.swift in Sources */,
 				686D21B723C9C7AE00C8889F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CC4D1D240A689C00BE72E7 /* BookModel.swift in Sources */,
 				686D21CC23C9C7AF00C8889F /* booknoteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +594,7 @@
 		};
 		686D21DC23C9C7AF00C8889F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0408C3451D411983A4B9E7 /* Pods-booknote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,6 +612,7 @@
 		};
 		686D21DD23C9C7AF00C8889F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEB505A2B9A48014297D4DF /* Pods-booknote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +630,7 @@
 		};
 		686D21DF23C9C7AF00C8889F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB152E71885E3351F5B72CB /* Pods-booknoteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +652,7 @@
 		};
 		686D21E023C9C7AF00C8889F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DDED7574167D241F4877F5 /* Pods-booknoteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +674,7 @@
 		};
 		686D21E223C9C7AF00C8889F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2469FC9FF64199354321E5 /* Pods-booknote-booknoteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +694,7 @@
 		};
 		686D21E323C9C7AF00C8889F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2754F70C2468B1F6E75C2A2E /* Pods-booknote-booknoteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
