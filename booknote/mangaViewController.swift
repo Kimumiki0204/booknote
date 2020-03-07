@@ -7,10 +7,30 @@
 //
 
 import UIKit
+import RealmSwift
 
 class mangaViewController: UIViewController,UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate {
     
+    var bookItem: Results<BookModel>!
+    
     @IBOutlet var table: UITableView!
+    
+    var genreNumber: Int!
+    
+    @IBAction func next() {
+        performSegueToResult()
+    }
+
+    func performSegueToResult(){
+        performSegue(withIdentifier: "toAddView", sender: nil)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "toAddView" {
+            let addViewController = segue.destination as! addViewController
+            addViewController.genreNumber = self.genreNumber
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +38,19 @@ class mangaViewController: UIViewController,UITextFieldDelegate,UITableViewDataS
         table.dataSource = self
         table.delegate = self
         
+        do{
+            let realm = try Realm()
+            bookItem = realm.objects(BookModel.self)
+        }catch{
+            
+        }
+        
 
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animared: Bool){
+        super.viewWillAppear(animared)
+        table.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,8 +59,9 @@ class mangaViewController: UIViewController,UITextFieldDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        let object = bookItem[indexPath.row].boolTitle
         
-        cell?.textLabel?.text = "テスト"
+        cell?.textLabel?.text = object
         
         return cell!
     }
