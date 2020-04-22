@@ -14,6 +14,7 @@ class addViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     @IBOutlet var textField1: UITextField!
     @IBOutlet var textField2: UITextField!
     var data: NSData!
+    var genreNumber: Int!
     
     @IBAction func selectphoto(){
         let imagePickerController: UIImagePickerController = UIImagePickerController()

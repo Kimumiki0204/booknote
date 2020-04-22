@@ -59,7 +59,7 @@ class mangaViewController: UIViewController,UITextFieldDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        let object = bookItem[indexPath.row].boolTitle
+        let object = bookItem[indexPath.row].bookTitle
         
         cell?.textLabel?.text = object
         

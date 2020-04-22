@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 class ViewController: UIViewController, UISearchBarDelegate  {
     @IBOutlet weak var searchBar: UISearchBar!
     var genreNumber: Int!
@@ -32,7 +32,6 @@ class ViewController: UIViewController, UISearchBarDelegate  {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "toAddView"{
             let addViewController = segue.destination as! addViewController
-            
             addViewController.genreNumber = self.genreNumber
         }
     }
